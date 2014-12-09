@@ -1,9 +1,7 @@
 $(function () {
 	var menu = function (buttonsAndContents) {
 		buttonsAndContents.map(function (buttonAndContent) {
-			if (window.location.hash !== buttonAndContent.button.prop("id")) {
-				buttonAndContent.content.css("display", "none");
-			}
+			buttonAndContent.content.css("display", "none");
 			buttonAndContent.button.on("click", function () {
 				buttonsAndContents.map(function (buttonAndContent) {
 					buttonAndContent.content.css("display", "none");
@@ -28,3 +26,5 @@ $(function () {
 		content: $("#submit-bill"),
 	}]);
 });
+
+var app = angular.module("thelawsinwisconsin", []);
