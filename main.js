@@ -14,8 +14,10 @@ $(function () {
 		buttonsAndContents[0].content.css("display", "");
 	};
 
-
 	menu([{
+		button: $("#about-menu"),
+		content: $("#about"),
+	}, {
 		button: $("#browse-laws-menu"),
 		content: $("#browse-laws"),
 	}, {
@@ -24,8 +26,5 @@ $(function () {
 	}, {
 		button: $("#submit-bill-menu"),
 		content: $("#submit-bill"),
-	}, {
-		button: $("#about-menu"),
-		content: $("#about"),
 	}]);
 });
