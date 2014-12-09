@@ -4,10 +4,10 @@
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<script src="jquery-2.1.1.min.js"></script>
 		<script src="angular.min.js"></script>
-		<script src="laws.js"></script>
 		<script src="main.js"></script>
+		<script src="laws.js"></script>
 	</head>
-	<body>
+	<body ng-controller="ctrl">
 		<div class="header">
 			<div class="h1">
 				The Laws in Wisconsin
@@ -22,6 +22,7 @@
 		<div class="content">
 			<div id="browse-laws" class="col-md-6">
 				<div class="h2 center-text">Browse The Laws</div>
+				<div browse-chapter chapter="chapters[0]"></div>
 			</div>
 			<div id="vote-on-bills" class="col-md-6">
 				<div class="h2 center-text">Vote On Bills</div>

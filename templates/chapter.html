@@ -1,0 +1,24 @@
+<div ng-repeat="section in chapter.sections">
+    <div>
+        <div class="col-xs-12">
+            <div class="h3" ng-bind="section.id"></div>
+        </div>
+    </div>
+    <div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-11">
+            <div class="p" ng-bind="section.text"></div>
+        </div>
+    </div>
+    <div ng-repeat="subsection in section.subsections">
+        <div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1">
+                <div class="h4" ng-bind="subsection.id"></div>
+            </div>
+            <div class="col-xs-10">
+                <div class="p" ng-bind="subsection.text"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -28,3 +28,19 @@ $(function () {
 });
 
 var app = angular.module("thelawsinwisconsin", []);
+
+app.controller("ctrl", [
+	'$scope',
+	'chapters',
+	function ($scope, chapters) {
+		$scope.chapters = chapters;
+	}]);
+
+app.directive("browseChapter", function () {
+	return {
+		scope: {
+			chapter: '=',
+		},
+		templateUrl: "templates/chapter.html",
+	};
+});
